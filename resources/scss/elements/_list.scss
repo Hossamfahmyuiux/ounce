@@ -1,0 +1,177 @@
+/* || ===
+
+= IMKAN.com.sa
+= LIST
+
+=== || */
+
+  // Inline list ..
+
+  .inline-list{
+    display: inline-block;
+    padding:0;
+    li{
+      display: inline-block;
+      padding:0 #{$base-height/4};
+    }
+
+    &.rating{
+      margin: $md-whitespace 0 0;
+      li{
+
+        padding:0;
+      }
+    }
+
+
+  }
+
+  .numberd{
+    list-style-type: decimal;
+  }
+  .circled{
+    list-style-type: circle;
+  }
+
+
+  .blocked-list{
+    padding-left: 0px;
+    list-style: none;
+    li{
+      background: $c-white;
+      padding: $md-whitespace;
+      box-shadow: $l-shadow;
+      border-radius: $border;
+      margin-bottom: $sm-whitespace;
+      font-size: $sm-fontsize;
+      @media screen and #{breakpoint(large)} {
+        font-size: $lr-sm-fontsize;
+      }
+      i {
+            position: relative;
+            top: 2px;
+            margin-right: 5px;
+        }
+    }
+  }
+
+  // Block list
+  .block-list{
+    display: block;
+    padding:0;
+    li{
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      float: right;
+      padding:0 0 6px;
+    }
+  }
+
+  // circle list
+
+  .circle-list{
+    text-align: right;
+    padding-right: 0px;
+    list-style: none;
+    line-height: 32px;
+    &.black{
+      li{
+        color: $c-mgray;
+        &:before{
+          border-color: $c-mgray;
+        }
+      }
+    }
+    li{
+      font-size: $sm-fontsize+2px;
+      color: $c-white;
+      &:before {
+          content: '';
+          height: 8px;
+          position: relative;
+          top: 15px;
+          width: 8px;
+          display: block;
+          float: right;
+          border-radius: 50%;
+          border: 2px solid $c-white;
+          margin-left: 10px;
+      }
+    }
+  }
+
+
+
+
+
+  .breadcrumb{
+    float: right;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    li{
+      display: inline-block;
+      &:before{
+        content: "\e1ad";
+        font-family: "icons" !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        font-variant: normal !important;
+        text-transform: none !important;
+        speak: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        position: relative;
+        top: 1px;
+        right: -8px;
+        color: $c-gray;
+        font-weight: bold;
+        font-size: 10px;
+      }
+      &:last-child a{
+        color: $c-gray;
+      }
+      &:first-child::before{
+        display: none;
+      }
+      a{
+        font-size: $lr-md-fontsize;
+        margin-left: $sm-whitespace;
+        color: $c-gray;
+      }
+    }
+  }
+
+
+
+
+
+
+.tabs-list{
+  float: right;
+  @media screen and #{breakpoint(large)}{
+    float: left;
+  }
+  li{
+    &:hover, &.active{
+      a{
+        color: $c-brand;
+        border-bottom: 2px solid;
+      }
+    }
+    a{
+      color: $c-white;
+      @include transition;
+      border-bottom: 2px solid transparent;
+      font-size: $md-fontsize;
+      padding-bottom: 4px;
+      @media screen and #{breakpoint(large)}{
+        font-size: $lr-md-fontsize+4px;
+      }
+      margin: 0 $sm-whitespace;
+    }
+  }
+}

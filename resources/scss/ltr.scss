@@ -1,0 +1,103 @@
+/*
+
+  || === >
+    = IMKAN ENGLISH FILE
+    = Imkan.com.sa
+  || === >
+
+*/
+
+body{
+  direction: ltr;
+  text-align: left;
+  font-family: 'Gotham' !important;
+  *{
+    font-family: 'Gotham' !important;
+
+  }
+}[class^="col-"],
+[class*=" col-"]
+{
+  float: left;
+}
+
+.section.order-investment article footer,.bx-left{
+  float: right;
+}
+.bx-right{
+  float: left;
+}
+
+.txt-right{
+  text-align: left;
+}
+.txt-left{
+  text-align: right;
+}
+.more{
+  i{
+    float: right !important;
+    margin-right: 0px !important;
+    margin-left: 15px !important;
+    transform: rotate(180deg);
+
+  }
+  &.right-icon{
+    float: left !important;
+    margin-right: 15px !important;
+    margin-left: 0px !important;
+    transform: rotate(180deg);
+
+  }
+}
+#top-page .logo{
+  float: left;
+}
+#top-page .main-nav li:before{
+  left: 8px;
+  right: auto;
+}
+#top-page .main-nav{
+  float: right;
+}
+.section.project .icon-bg:before{
+
+  @media (min-width: 992px) {
+    left: -90px;
+    right: auto;
+  }
+}
+.tabs-list li a{
+  margin: 0 5px;
+  @media (min-width: 992px) {
+    margin: 0 15px;
+  }
+}
+.tabs-list{
+  float: right;
+}
+.projects-cards article header{
+  right: auto;
+  left: 30px;
+}
+#bottom-page .logo{
+  float: left;
+}
+#bottom-page ul{
+  float: right;
+}
+#bottom-page ul li:last-child a{
+  margin-right: 0;
+}
+.radio-buttons label{
+
+    float: left;
+    margin: 17px 10px 0 0;
+}
+.select-bg i{
+  right: 45px;
+  left: auto;
+}
+#top-page .menu-toggle{
+  float: right;
+}

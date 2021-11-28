@@ -1,0 +1,148 @@
+/* || ===
+
+= IMKAN.com.sa
+= APP CUSTOM STYLE
+
+=== || */
+
+
+
+        // == COLORS == //
+
+            // brand colors ..
+            $c-brand:         #f5a523;
+            $c-lbrand:        #edfdee;
+            $c-brand2:        #d95f79;
+            $c-brandhvr:      #ff9f41;
+            // standerd colors ..
+            $c-black:      #131927;
+            $c-dgray:      #232730;
+            $c-mgray:      #767d8c;
+            $c-gray:       #989998;
+            $c-lgray:      #555555; 
+            $w-gray:       #ddd;
+            $c-ofwhite:    #fafcff;
+            $c-border:     #a6aab3;
+            $d-border:     #f0f0f0;
+            $c-lwhite:     #fafbfd;
+            $c-white:      #fff;
+            $c-hwhite:     #f5f5f5; 
+            $d-gray:        #c9ccd2;
+
+            // status colors ..
+            $c-green:      #20c29d;
+            $h-green:      #28a745;
+            $d-green:       #e8f9f5;
+            $c-orange:     #ffab00;
+            $m-green:       #248a3b;
+            $c-red:        #ef2d34;
+            $d-red:        #e2574c;
+            $h-red:        #fae5e8;
+            $c-yellow:     #f5a523;
+            $c-blue:       #c0dcf8;
+            $d-blue:        #007bff;
+            $c-purple:     #d040ff;
+
+            // social colors ..
+            $c-facebook:   #3b5998;
+            $c-twitter:    #55acee;
+            $c-behance:    #1769ff;
+            $c-google:     #dd4b39;
+            $c-linked:     #007bb5;
+            $c-dribbble:   #ea4c89;
+            $c-instegram:  #D32557;
+            $c-whatsapp:   #4dc247;
+
+
+
+
+
+            // Overlays ..
+            $c-overlay-black: rgba(20, 22, 25, 0.12);
+            $c-overlay-white: rgba(255, 255, 255, 0.81);
+            $c-overlay-brand: rgba(195, 32, 63, 0.85);
+
+
+            // gradients ..
+            $c-gradient-main: linear-gradient( -44deg, rgb(24,106,158) 0%, rgb(37,124,179) 100%);
+
+
+        // == WHITESPACE == //
+        $sm-whitespace : 15px;
+        $md-whitespace : $sm-whitespace*2;
+        $lr-whitespace : $md-whitespace*2; 
+        $xl-whitespace : $lr-whitespace*2;
+
+                // inner whitespace ..
+                $sm-padding    : 5px;
+                $md-padding    : $sm-padding*1.5;
+                $lr-padding    : $md-padding*1.5;
+
+                        // other vals ..
+                        $border        : 1px;
+                        $base-height   : 10px;
+                        $base-group    : $base-height*6;
+
+                          // border radius ..
+                          $default-radius: 250px;
+                          $box-radius: 12px;
+                          $default-radius: 5px;
+
+        // == SHADOW == //
+        $l-shadow:    0px 5px 20px 0px rgba(35, 39, 48, 0.03);
+        $d-shadow:     0px 4px 10px 0px rgba(175, 201, 227, 0.09);
+        $soft-shadow:  -2px 2px 20px 0 rgba(0, 0, 0, 0.05);
+
+
+
+            // == preak points == //
+            $phone:	768px;
+            $tablet: 992px;
+            $desktop: 1200px;
+
+
+        // == FONTS == //
+
+
+            // small size ..
+            $xxs-fontsize : 10px;
+            $xs-fontsize : 12px;
+            $sm-fontsize : 14px;
+            $xm-fontsize : 18px;
+            $md-fontsize : 20px;
+            $lr-fontsize : 24px;
+            $xl-fontsize : 32px;
+
+            // medium size ..
+            $md-sm-fontsize : 16px;
+            $md-md-fontsize : 18px;
+            $md-lr-fontsize : 26px;
+            $md-xl-fontsize : 32px;
+
+            // large size ..
+            $lr-xxs-fontsize : 14px ;
+            $lr-xs-fontsize : 16px;
+            $lr-sm-fontsize : 18px;
+            $lr-xm-fontsize : 24px;
+            $lr-md-fontsize : 28px;
+            $lr-lr-fontsize : 34px;
+            $lr-xl-fontsize : 50px;
+
+            // Icons Size ..
+            $sm-iconsize : 8px;
+            $md-iconsize : 14px;
+            $lr-iconsize : 16px;
+
+            // font family ..
+            $normal-font:       'Helvetica', sans-serif;
+            $second-font:       'Helvetica', sans-serif;
+            $md-font:           'Helvetica', sans-serif;
+            $en-font:           'Gotham';
+            $icon-font-family:  'icons';
+
+
+
+
+
+
+/* any var - that we gonna use in 2 cases or more. should be placed here */

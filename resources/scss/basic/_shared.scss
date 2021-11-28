@@ -1,0 +1,117 @@
+/* || ===
+
+= IMKAN.com.sa
+= SHARED CLASSES
+
+=== || */
+
+
+body, html{
+  background: $c-white;
+  font-family: $normal-font;
+  direction: rtl;
+  text-align: right;
+  padding: 0px;
+  margin: 0px;
+  color: $c-black;
+}
+a:hover{
+  color: $c-brand;
+}
+
+
+// Chrome Problem
+    *:focus,*:hover{
+      outline: 0;
+      text-decoration: none !important;
+      border: 0;
+    }
+
+// figure margin
+figure{
+  margin:0;
+}
+
+
+// pointer
+.cur{
+  cursor: pointer;
+}
+// img
+img{
+  width: 100%;
+}
+
+// onclick cursor
+[onclick],.pointer{cursor: pointer;}
+
+.hide-now{
+  display: none;
+}
+.tos-wrapper img{width: auto !important;}
+.tos-wrapper *,.tos-wrapper{
+  direction: ltr;
+}
+
+
+// responstive
+.resp{
+  width: 100%;
+  @media #{breakpoint(large)} {
+    width: auto;
+  }
+}
+
+
+
+// content hidden
+.content-view{
+  max-height: 0;
+  @include transition;
+  overflow: hidden;
+  &.active{
+    max-height: 10000000px;
+  }
+}
+.hidden-action{
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+
+// general ico
+.general-ico{
+  position: relative;
+  top: 3px;
+  display: block;
+  float: right;
+  margin-left: 10px;
+}
+
+
+
+// wrapper
+.wrapper-bx{
+  box-shadow: $l-shadow;
+  padding: $sm-whitespace;
+  float: right;
+  width: 100%;
+  @media screen and #{breakpoint(large)} {
+    padding: $md-whitespace;
+  }
+}
+
+.hide-sm{
+  display: none;
+  @media screen and #{breakpoint(large)} {
+    display: block;
+  }
+
+}
+.min-height-vh{
+  min-height: 80vh;
+}
+body{
+  overflow-x: hidden;
+}

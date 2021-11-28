@@ -1,0 +1,273 @@
+/* || ===
+
+= IMKAN.com.sa
+= BUTTONS LAYOUT
+
+=== || */
+
+.btn, button{
+
+    // DEFULT SETTINGS ..
+    // box-shadow: $l-shadow;
+    border: 0;
+    // color: $c-white;
+    border-radius: 3px;
+    padding: 0 $md-whitespace;
+    position: relative;
+    @include transition;
+    height: $base-height*5;
+    line-height: $base-height*5;
+    &.txt-black{
+      color: $c-black ;
+    }
+    &.borderd{
+      border: 2px solid $c-white;
+    }
+    &.borderd-hvr{
+      border: 2px solid transparent;
+    }
+    &.borderd-hvr:hover{
+      background: transparent !important;
+      border: 2px solid;
+    }
+    &.no-trans{
+      transition: 0s;
+    }
+    &.bx-shdw{
+      border: 2px solid;
+      box-shadow: 0px 0px 0px inset;
+      background: transparent !important;
+      @include transition;
+      &:hover{
+        border: 2px solid $c-brand;
+        box-shadow: 0px 0px 160px  $c-brand inset;
+      }
+    }
+    // Size ..
+    &.lr{
+      height: $base-height*6;
+      line-height: $base-height*6;
+    }
+    &.md{
+        height: $base-height*5;
+        line-height: $base-height*5;
+    }
+    &.sm{
+        height: $base-height*4;
+        line-height: $base-height*3.4;
+    }
+
+    // + Reason - reason there because some buttons need to be 100% in responsive.
+
+    &.resp{
+      width: 100%;
+      @media screen and #{breakpoint(medium)}{
+        width: auto !important;
+      }
+    }
+
+    &.no-line{
+      line-height: inherit !important;
+    }
+    // Remove ..
+    &.no-brds{
+        border-radius: 0px;
+    }
+
+    &.no-shdw{
+        box-shadow: none !important;
+    }
+
+    &.circ-rdus{
+      border-radius: 50px;
+    }
+
+    // STATS ..
+    &[disabled]{
+        background: $c-mgray !important;
+    }
+
+    // Icons ..
+    &.with-icon{
+      i{
+        float: left;
+        position: relative;
+        top: 4px;
+        margin-right: $base-height;
+      }
+      &.right-icon{
+          i{
+            margin-right: 0;
+            margin-left: $base-height;
+            float: right;
+          }
+      }
+
+    }
+
+
+}
+
+
+// Circle Small Button ..
+    .circ{
+        height: $base-height*2;
+        width: $base-height*2;
+        background:$c-black;
+        display: inline-block;
+        border-radius: 50%;
+        text-align: center;
+        font-size: $sm-fontsize;
+        color: $c-white;
+        margin-left: $base-height/2;
+
+            &:before{
+                font-size: $sm-iconsize !important;
+                padding-right: 1.5px;
+            }
+    }
+
+
+// btn more
+a.more{
+    font-size: $lr-sm-fontsize+2px;
+    box-shadow: 0;
+    padding:0;
+    // overflow:hidden;
+    *{
+      @include transition;
+    }
+    span{
+      width: calc(100% - 45px);
+      display: block;
+      float: right;
+    }
+    &.txt-black{
+        color: $c-black !important;
+        i{
+          border-color: $c-black !important;
+          color: $c-white;
+          background: $c-black !important;
+        }
+    }
+    &:hover{
+      i{
+        margin-right: $sm-whitespace;
+      }
+    }
+    &.bx-btn{
+      background: $c-white;
+      padding: $sm-whitespace;
+      box-shadow: $l-shadow;
+      margin-top: $sm-whitespace;
+      color: $c-mgray;
+      border-radius: $border;
+      i{
+        border-color: $c-mgray;
+        color: $c-white;
+        background: $c-mgray;
+      }
+      &:hover{
+        color: $c-black !important;
+        i{
+          border-color: $c-black !important;
+          color: $c-white;
+          background: $c-black !important;
+        }
+      }
+    }
+
+    i{
+      border-radius: 50%;
+      height: 25px;
+      width: 25px;
+      text-align: center;
+      line-height: 26px;
+      font-size: 11px !important;
+      position: relative !important;
+      top: -1px !important;
+      border: 2px solid $c-white;
+    }
+
+}
+
+
+
+
+
+// more buttons in bottom
+.more-btm{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 0px;
+  color: $c-white;
+  cursor: pointer;
+  padding: 12px 0px 0px;
+  border: 2px solid $c-white;
+  margin-top: $sm-whitespace;
+  @include transition;
+  float: right;
+  &:hover{
+    background: $c-white;
+    color: $c-brand;
+  }
+}
+
+
+
+// new more
+.show-more{
+
+      display: block;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      color: $c-brand;
+      background: $c-ofwhite;
+      @include transition;
+      &:hover{
+        background: $c-brand;
+        color: $c-white;
+      }
+}
+
+.next-btn{
+    padding-right: 40px;
+}
+
+// borderd buttons
+.borderd-btn{
+  border-bottom: 2px solid $c-brand;
+  padding-bottom: $sm-whitespace;
+  position: relative;
+  @include transition;
+  &:hover{
+    border-color: $c-brand2;
+  }
+  i{
+    font-size: 14px;
+    position: relative;
+    top: 3px;
+    margin-left: 4px;
+  }
+}
+
+.border-btn{
+  // border: 1px solid $c-brand;
+  background: #fff7f8;
+  color: $c-brand;
+  margin-left: $sm-whitespace;
+  &.no-mar-left{
+    margin-left: 0;
+  }
+}
+
+
+.more-comments {
+  i{
+    font-size: 9px;
+    margin: 0 9px;
+  }
+}

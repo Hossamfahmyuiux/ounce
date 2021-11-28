@@ -1,0 +1,301 @@
+/* || ===
+
+= IMKAN.com.sa
+= HEADER
+
+=== || */
+.main-header
+{
+    background-color: $d-border;
+}
+#top-page
+{
+    
+    padding: $base-height*4;   
+    @media screen and (max-width: $tablet)
+    {
+        padding: $base-height*2; 
+    }
+    .logo
+    {
+        height: 70px;
+        width: 123px;
+        margin-top: $sm-whitespace - 4px;
+        display: block;
+        float: right;
+        @media screen and (max-width: $tablet)
+        { 
+            height: 61px;
+            width: 80px;
+            background-size:  100%;
+            display:  block;
+        }
+        
+    } 
+    .burger-icon
+    {
+        float: left;
+        margin-top:$md-whitespace;
+        display: none;
+        span
+        {
+            width: $sm-whitespace + 5px;
+            height: 2px;
+            background-color: $c-dgray;
+            display: block;
+            margin-bottom: $sm-whitespace - 10px;
+        }
+        @media screen and (max-width: $tablet)
+        {
+            display: block;
+        }
+    }// Burger Icon
+
+    .navbar 
+    {
+         @media screen and (max-width: $tablet)
+        {
+            display: none;
+            &.active{
+            display: block;
+            }
+        }
+      
+        .nav-links
+        {
+            margin-right: $lr-whitespace;
+            margin-top: $sm-whitespace; 
+            @media screen and (max-width: $tablet)
+            {
+                margin-right: 0px; 
+                margin-top: $sm-whitespace + 5px;
+                width: 100%;
+            }
+               
+            li
+            {
+                padding: 18px 0 40px 0;
+                margin-left: $sm-whitespace + 3px;
+                cursor: pointer;
+                &:hover > .drop-menu
+                {
+                    display: block;
+                    
+                }
+                &:hover > i
+                {
+                    color: $c-black;
+                    vertical-align: middle;
+                    -webkit-transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                }
+                @media screen and (max-width: $tablet)
+                {
+                    display: block;   
+                    padding: 0 0 $sm-whitespace 0;
+                }
+                a
+                {
+                    display: inline-block;
+                    color: $c-lgray;
+                    font-size: $xm-fontsize;
+                    @include transition;
+                    font-family: 'Janna LT';
+                    &:hover
+                    {
+                        color: $c-black;
+                    }
+                    @media screen and (max-width: $tablet)
+                    {
+                        
+                    }
+                }
+                i
+                {
+                    font-size: $sm-iconsize;
+                    color: $c-mgray;
+                    margin-right: $sm-whitespace - 5px;
+                    display: inline-block;
+                    @include transition;
+                }
+                .drop-menu
+                {
+                    padding: 50px 50px 0 50px!important;
+                    width: 100%;
+                    float: none;
+                    list-style: none;
+                    background-color: $c-white;
+                    margin: 0px;
+                    border-radius: 0px;
+                    position: absolute;
+                    margin-top: 0;
+                    padding: 0;
+                    right: 0;
+                    overflow: hidden;
+                    top: $xl-whitespace - 25px;
+                    right: 0;
+                    display: none;
+                    @include transition;
+                    z-index: 999;
+                    @media screen and (max-width: $tablet)
+                    {
+                        padding-bottom: $md-whitespace;
+                    }
+                    li
+                    {
+                        display: block;
+                        cursor: pointer;
+                        padding: 0!important;
+                        margin-left: 0!important;
+                        a
+                        {
+                            display: block;
+                            color: #131927;
+                            text-decoration: none;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 32px;
+                            @include transition;
+                            font-family: 'Janna LT';
+                            &:hover
+                            {
+                                color: $c-yellow;
+                            }
+                        }
+                    }
+                    .image
+                    {
+                        li
+                        {
+                            img
+                            {
+                                width: 171px;
+                                padding-top: $sm-whitespace;
+                            }
+                        }
+                    }
+                    .links
+                    {
+                        @media screen and (max-width: $tablet)
+                        {
+                            margin-bottom: $sm-whitespace;
+                        }
+                        li
+                        {
+                            h3
+                            {
+                                margin-bottom: $sm-whitespace;
+                                margin-top: $md-whitespace;
+                                font-family: 'Janna LT';
+                            }
+                            .add
+                            {
+                                color: $c-white;
+                                line-height: 45px!important;
+                                font-family: 'Janna LT';
+                                &:hover
+                                {
+                                    border: 2px solid $c-black;
+                                    color: $c-black;
+                                }
+                            }
+                        } 
+                    }
+                    .sections
+                    {
+                        li
+                        {
+                            
+                            h2
+                            {
+                                font-family: 'Janna LT';
+                            }
+                            a
+                            {
+                                line-height: 46px;
+                                font-family: 'Janna LT';
+                            }
+                        }
+                    }
+                    .links2
+                    {
+                        margin-top: $md-whitespace;
+                        li
+                        {
+                            
+                            h2
+                            {
+                                font-family: 'Janna LT';
+                            }
+                            a
+                            {
+                                line-height: 46px;
+                                font-family: 'Janna LT';
+                            }
+                        }
+                    }
+                    
+                }// drop menu 
+            }
+            .user-area
+            {
+                @media screen and (max-width: $tablet)
+                {
+                    float: right;
+                }
+                .login 
+                {
+                    height: 40px;
+                    line-height: 39px;
+                    position: relative;
+                    z-index: 1;
+                    @media screen and (max-width: $tablet)
+                    {
+                        text-align: center;
+                    }
+                }
+                .icons-area
+                {
+                    display: inline-block!important;
+                    padding: 0 $sm-whitespace 0 0;
+                    @media screen and (max-width: $tablet)
+                    {
+                        float: right;
+                    }
+                    li
+                    {
+                        margin-left: $sm-whitespace - 5px!important;
+                        a
+                        {
+                            vertical-align: middle;
+                            @include transition;
+                            i
+                            {
+                                font-size: $md-fontsize + 4px;
+                                margin-right: 0!important;
+                            }
+                            &:hover > i
+                            {
+                                color: $c-yellow;
+                            }
+                        }
+                    }
+                    .heart
+                    {
+                        @include transition;
+                        color: $c-red;
+                        &:hover > i
+                        {
+                            color: $c-red!important;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }// mobile navbar 
+}// top page 
+

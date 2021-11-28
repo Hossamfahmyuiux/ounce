@@ -1,0 +1,179 @@
+/* || ===
+
+= IMKAN.com.sa
+= CLEARING & SPACING
+
+=== || */
+
+
+        // Vertical Spacing classes ..
+            .lr-ver-spc{
+                @include ver-padding(6,12,16, false);
+                &.hlf-btm{
+                    @include ver-padding(6,12,16, true);
+                }
+            }
+            .md-ver-spc{
+                @include ver-padding(3,6,8, false);
+                &.hlf-btm{
+                    @include ver-padding(3,6,12, true);
+                }
+            }
+            .sm-ver-spc{
+                @include ver-padding(1.5,3,6, false);
+                &.hlf-btm{
+                    @include ver-padding(1.5,3,6, true);
+                }
+                &.sm-btn{
+                  @include ver-padding(1,2,4, false);
+                }
+            }
+
+                    // Vertical Spacing classes ..
+                    .inactive{
+                        &.sm-ver-spc,&.md-ver-spc,&.lr-ver-spc{
+                          padding: 0;
+                        }
+                        &.active{
+                          &.lr-ver-spc{
+                              @include ver-padding(6,12,16, false);
+                              &.hlf-btm{
+                                  @include ver-padding(6,12,16, true);
+                              }
+                          }
+                          &.md-ver-spc{
+                              @include ver-padding(3,6,8, false);
+                              &.hlf-btm{
+                                  @include ver-padding(3,6,12, true);
+                              }
+                          }
+                          &.sm-ver-spc{
+                              @include ver-padding(1.5,3,6, false);
+                              &.hlf-btm{
+                                  @include ver-padding(1.5,3,6, true);
+                              }
+                              &.sm-btn{
+                                @include ver-padding(1,2,4, false);
+                              }
+                          }
+                        }
+                      }
+
+        // Horizontal Spacing classes ..
+            .lr-hor-spc{
+                @include hor-padding(6,12,16);
+            }
+            .md-hor-spc{
+                @include hor-padding(3,6,12);
+            }
+            .sm-hor-spc{
+                @include hor-padding(1.5,3,6);
+            }
+            // padding middle
+            .pd-md{
+              padding: $sm-whitespace;
+              @media screen and #{breakpoint(large)}{
+                padding: $md-whitespace;
+              }
+            }
+            .pd-lr{
+              padding: $sm-whitespace;
+              @media screen and #{breakpoint(large)}{
+                padding: $md-whitespace*2;
+              }
+            }
+
+
+        // Location ..
+
+            .bx-center{
+                margin: auto;
+                float: none;
+            }
+            .bx-left{
+                float: left;
+            }
+            .bx-right{
+                float: right;
+            }
+
+
+        // margins ..
+        .no-mar{
+          margin: 0;
+        }
+        .no-pd-r{
+          padding-right: 0;
+        }
+        .no-pd-l{
+          padding-left: 0;
+        }
+
+        .xs-mar{
+          margin-top: $sm-whitespace/2;
+        }
+        .sm-mar{
+          margin-top: $sm-whitespace;
+        }
+        .md-mar{
+          margin-top: $md-whitespace;
+        }
+        .lr-mar{
+          margin-top: $md-whitespace;
+          @media screen and #{breakpoint(large)}{
+            margin-top: $md-whitespace*2;
+          }
+        }
+
+        .xl-mar{
+          margin-top: $xl-whitespace/4;
+          @media screen and #{breakpoint(large)}{
+            margin-top: $xl-whitespace;
+          }
+        }
+
+        //  mar bottom ..
+        .xs-mar-bot{
+          margin-bottom: $sm-whitespace/2;
+        }
+        .sm-mar-bot{
+          margin-bottom: $sm-whitespace;
+        }
+        .md-mar-bot{
+          margin-bottom: $md-whitespace;
+        }
+        .lr-mar-bot{
+          margin-bottom: $sm-whitespace;
+          @media screen and #{breakpoint(large)}{
+          margin-bottom: $md-whitespace*2;
+          }
+        }
+        .xl-mar-bot{
+          margin-bottom: $xl-whitespace/2;
+          @media screen and #{breakpoint(large)}{
+            margin-bottom: $xl-whitespace;
+          }
+        }
+
+
+        // margin for sections in responsive ..
+        .resp-mar{
+          margin-top: $base-height*9;
+          @media screen and #{breakpoint(large)}{
+            margin-top: 0;
+          }
+        }
+
+
+        // full width
+        .f_width{
+          width: 100%;
+        }
+
+        // left margins
+        .left-mar-10{
+          margin-left: 10px;
+        }
+        .right-mar-10{
+          margin-right: 10px;
+        }

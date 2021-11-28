@@ -1,0 +1,164 @@
+/* || ===
+
+= IMKAN.com.sa
+= TYPOGRAPHY
+
+=== || */
+
+    // Shared ..
+        *{
+            font-weight: normal;
+            font-family: $normal-font;
+        }
+        strong, .txt-bold{
+          font-family: $second-font;
+        }
+        .txt-md{
+          font-family: $md-font;
+        }
+        .txt-en{
+          font-family: $en-font;
+          direction: ltr;
+        }
+        .txt-upper{
+          text-transform: uppercase;;
+        }
+        .txt-underline{
+          border-bottom: 2px solid #f0f2f7;
+          padding-bottom: 3px;
+        }
+        .txt-italic{
+          font-style: italic;
+        }
+
+        .w-ic{
+            font-size: 0px;
+        }
+        .num{
+            font-family: $en-font;
+        }
+
+    // A Color ..
+        a{
+            color: $c-brand;
+
+            &:hover{
+                color: $c-brand2;
+            }
+        }
+
+    // Heading ..
+        h1, h2, h3, h4, h5, h6{
+            margin: 0px;
+            color: $c-black;
+        }
+
+
+    // Font Size ..
+        .txt-xs{
+            font-size: $xs-fontsize;
+            @media screen and #{breakpoint(medium)}{
+                font-size: $md-sm-fontsize;
+            }
+            @media screen and #{breakpoint(large)} {
+                font-size: $lr-xs-fontsize;
+            }
+        }
+        .txt-sm{
+            font-size: $sm-fontsize;
+            @media screen and #{breakpoint(medium)}{
+                font-size: $md-sm-fontsize;
+            }
+            @media screen and #{breakpoint(large)} {
+                font-size: $lr-sm-fontsize;
+            }
+        }
+        .txt-md{
+            font-size: $md-fontsize;
+            @media screen and #{breakpoint(medium)}{
+                font-size: $md-md-fontsize;
+            }
+            @media screen and #{breakpoint(large)} {
+                font-size: $lr-md-fontsize;
+            }
+        }
+        .txt-xm{
+            font-size: $xm-fontsize;
+            @media screen and #{breakpoint(medium)}{
+              font-size: $xm-fontsize;
+            }
+            @media screen and #{breakpoint(large)} {
+                font-size: $lr-xm-fontsize;
+            }
+        }        .txt-lr{
+            font-size: $lr-fontsize;
+            @media screen and #{breakpoint(medium)}{
+                font-size: $md-lr-fontsize;
+            }
+            @media screen and #{breakpoint(large)} {
+                font-size: $lr-lr-fontsize;
+            }
+        }
+        .txt-xl{
+            font-size: $xl-fontsize;
+            @media screen and #{breakpoint(medium)}{
+                font-size: $md-xl-fontsize;
+            }
+            @media screen and #{breakpoint(large)} {
+                font-size: $lr-xl-fontsize;
+            }
+        }
+        .txt-xxl{
+            font-size: $xl-fontsize+4px;
+            @media screen and #{breakpoint(medium)}{
+                font-size: $md-xl-fontsize+4px;
+            }
+            @media screen and #{breakpoint(large)} {
+                font-size: #{$lr-xl-fontsize+25px};
+            }
+        }
+
+    // LINE-HGIHT ..
+        .sm-lh{
+            line-height: $sm-whitespace !important;
+        }
+        .md-lh{
+          line-height: 1.9;
+        }
+        .lr-lh{
+            line-height: calc(#{$lr-whitespace} - 5px) !important;
+        }
+
+    // Text Align ..
+        .txt-center{
+            text-align: center;
+        }
+        .txt-left{
+            text-align: left;
+        }
+        .txt-right{
+            text-align: right;
+        }
+
+        // direction
+        .dir-ltr{
+          direction: ltr;
+        }
+        .dir-rtl{
+          direction: rtl;
+        }
+
+
+        // resp
+        .txt-resp-right{
+          text-align: right;
+          @media screen and #{breakpoint(large)} {
+            text-align: left;
+          }
+        }
+        .txt-resp-right{
+          text-align: left;
+          @media screen and #{breakpoint(large)} {
+            text-align: right;
+          }
+        }

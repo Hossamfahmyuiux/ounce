@@ -1,0 +1,32 @@
+/* || ===
+
+= IMKAN.com.sa
+= EFFECTS CLASSES
+
+=== || */
+
+
+        // Border Radius ..
+            .cir-rdus{
+                border-radius: 100px;
+            }
+            .sm-rdus{
+                border-radius: $border;
+            }
+            .md-rdus{
+                border-radius: $border*2;
+            }
+            .lr-rdus{
+                border-radius: $border*4;
+            }
+
+
+        // Box Shadows ..
+
+            .l-shdw{
+                box-shadow: $l-shadow;
+            }
+            .d-shdw{
+                box-shadow: $d-shadow;
+            }
+

@@ -1,0 +1,62 @@
+/* || ===
+
+= IMKAN.com.sa
+= VISIBILTY
+
+=== || */
+
+
+  // Displays
+  *{
+
+    &.dis-block{
+      display: block;
+    }
+
+    &.dis-inline{
+      display: inline;
+    }
+
+    *.dis-inline-block{
+      display: inline-block;
+    }
+    *.dis-none{
+      display: none;
+    }
+
+  }
+
+
+
+  // Overflow
+
+  *{
+
+    &.over-hidden{
+      overflow: hidden;
+    }
+
+  }
+
+
+
+  // relative index .
+  *{
+
+        &.relative-index{
+          position: relative;
+          z-index: 7;
+        }
+
+        &.relative-index-2{
+          position: relative;
+          z-index: 4;
+        }
+
+  }
+
+
+  // shadows
+  .l-shdw{
+    box-shadow: $l-shadow;
+  }

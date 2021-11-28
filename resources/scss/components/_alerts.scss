@@ -1,0 +1,43 @@
+/* || ===
+
+= IMKAN.com.sa
+= ALERTS
+
+=== || */
+
+.alert{
+
+  position: fixed;
+  max-width: 500px;
+  width: calc(100vw - 60px);
+  z-index: 999;
+
+  .msgbox{
+    margin: 0px;
+    opacity: 1;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+
+  // postions
+  &.right.top{
+    top: 30px;
+    right:30px;
+  }
+  &.right.bottom{
+    bottom: 30px;
+    right:30px;
+  }
+  &.left.top{
+    top: 30px;
+    left:30px;
+  }
+  &.left.bottom{
+    bottom: 30px;
+    left:30px;
+  }
+
+}

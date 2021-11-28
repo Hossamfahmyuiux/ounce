@@ -1,0 +1,156 @@
+/* || ===
+
+        = IMKAN PROJECT TITLE
+        = By Imkan.com.sa
+        = 2015 - 2017
+
+        ===================
+        ||    CONTENT    ||
+        ===================
+
+                || FRAMEWORK
+                ============
+                00. Bootstrap
+
+                || BASIC
+                =========
+
+                01. Normalize
+                02. Variables
+                03. RWD
+                04. Mixnins
+                05. Shared
+
+                || ELEMENTS
+                ===========
+
+                06. Colors
+                07. Fonts
+                08. Typography
+                09. Icons
+                10. Visibility
+                11. Buttons
+                12. Tooltip
+                13. Loader
+                14. List
+                15. Images
+                16. Embade
+                17. Clearing
+                18. Divider
+                19. Effects
+
+                || COMPONENTS
+                =============
+
+                20. Header
+                21. Footer
+                22. Alerts
+                23. Message Box
+                24. Modal
+                25. Dropdown
+                26. Tabs
+                27. Forms
+                28. Cards
+                29. Item List
+                23. Feeds
+                31. Cart
+                32. Progress Bar
+                33. Sections
+
+                || 3rd PART PLUGINS
+                =====================
+                34. Animation
+
+
+=== || */
+
+                // Framework
+                @import 'framework/bootstrap/bootstrap';
+
+                // Basic Call
+                @import 'basic/normalize';
+                @import 'basic/variables';
+                @import 'basic/mixins/rwd';
+                @import 'basic/mixins/mixins';
+                @import 'basic/shared';
+
+                // Elements Call
+                @import 'elements/animation';
+                @import 'elements/colors';
+                @import 'elements/fonts';
+                @import 'elements/typo';
+                @import 'elements/icons';
+                @import 'elements/visibility';
+                @import 'elements/buttons';
+                @import 'elements/tooltip';
+                @import 'elements/loader';
+                @import 'elements/list';
+                @import 'elements/images';
+                @import 'elements/embade';
+                @import 'elements/clearing';
+                @import 'elements/divider';
+                @import 'elements/effects';
+
+
+                // Components Call
+                @import 'components/headers';
+                @import 'components/footers';
+                @import 'components/alerts';
+                @import 'components/message_box';
+                @import 'components/modal';
+                @import 'components/drop_down';
+                @import 'components/tabs';
+                @import 'components/form';
+                @import 'components/cards';
+                @import 'components/items_list';
+                @import 'components/feeds';
+                @import 'components/cart';
+                @import 'components/progress_bar';
+                @import 'components/sections';
+                @import 'components/tabs';
+
+                // 3rd Part Plugins
+                @import 'vendor/animation';
+                @import 'vendor/slick';
+
+
+
+
+/* || ===
+
+        = Dedicated Pages Layout
+
+        ===================
+        ||    CONTENT    ||
+        ===================
+
+                01. HomePage
+                02. SearchResult
+
+
+=== || */
+
+@import 'pages/home';
+@import 'pages/project';
+    // @import 'pages/contact';
+
+
+
+
+
+/* || ===
+
+        = HOT FIXES ..
+
+        ===================
+        ||    CONTENT    ||
+        ===================
+
+                01. WINDOWS
+                02. MAC
+
+
+=== || */
+
+                @import 'hotfix/windows';
+                @import 'hotfix/mac';

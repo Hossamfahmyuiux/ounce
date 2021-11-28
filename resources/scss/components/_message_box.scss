@@ -1,0 +1,82 @@
+/* || ===
+
+= IMKAN.com.sa
+= MESSAGE BOX
+
+=== || */
+
+
+.msgbox{
+
+  background: $c-gray;
+  border-radius: 2px;
+  color: $c-white;
+  padding: 1px 20px;
+  margin: 15px 0px;
+  border-radius: 71px;
+  box-shadow: $l-shadow;
+  position: relative;
+  @include transition(0.2s);
+  cursor: default;
+  margin-bottom: 20px !important;
+
+  &.pointer{
+    cursor: pointer;
+  }
+
+
+  // colors
+  &.success-color{
+    background: $c-green;
+  }
+  &.secondary-color{
+    background: $c-brand;
+    color: $c-white;
+  }
+  &.warning-color{
+    background: $c-orange;
+  }
+  &.alert-color{
+    background: $c-red;
+  }
+
+  // action button
+  &:before{
+    display: block;
+    font-size: 12px;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+  }
+  &.close-on-click:before{
+    content: "\25";
+    transform: rotate(140deg);
+  }
+  &.next-on-click:before{
+    content: "\25";
+    transform: rotate(140deg);
+  }
+
+  // hover
+  &:hover{
+    box-shadow: $l-shadow;
+  }
+
+  // p
+  p{
+    max-width: 90%;
+  }
+
+  // content icons
+  &.icon{
+    padding-right:55px;
+    i {
+        font-size: 18px;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+  }
+
+
+}

@@ -1,0 +1,152 @@
+/* || ===
+
+= IMKAN.com.sa
+= MIXINS
+
+=== || */
+
+
+//|| ===
+    // = VER ALIEN
+//|| ===
+
+			@mixin middle-layout($align: middle, $zindex: 0, $postion: relative ){
+			    display: table;
+
+			    .table-cell, .content{
+			      display: table-cell;
+			      vertical-align:$align;
+			      width: 100%;
+						z-index: $zindex;
+						position: $postion;
+			    }
+			}
+
+
+//|| ===
+    // = COVER IMAGE
+//|| ===
+
+      @mixin cover-img($url, $color){
+        background: $color url($url) no-repeat  center center ;
+      }
+
+			@mixin topbg-img($url, $color){
+				background: $color url($url) no-repeat center top / 100% auto ;
+			}
+
+
+//|| ===
+    // = OPACITY BG
+//|| ===
+
+      @mixin opacity-bg($color: $steel , $opacity: 0.5){
+        background:$color;
+        opacity: $opacity;
+      }
+
+
+//|| ===
+    // = PADDING SIZE
+//|| ===
+
+			// Vertical Padding ..
+      @mixin ver-padding($small, $medium, $large, $halfbottom){
+
+						@if $halfbottom == false {
+
+								padding: #{$base-height*$small} 0px;
+
+								@media #{breakpoint(medium)} {
+									padding: #{$base-height*$medium} 0px;
+								}
+
+								@media #{breakpoint(large)} {
+									padding: #{$base-height*$large} 0px;
+								}
+
+						} @else {
+
+									padding: #{$base-height*$small} 0px;
+									padding-bottom: #{$base-height*$small/2};
+
+									@media #{breakpoint(medium)} {
+										padding: #{$base-height*$medium} 0px;
+										padding-bottom: #{$base-height*$medium/2};
+
+									}
+
+									@media #{breakpoint(large)} {
+										padding: #{$base-height*$large} 0px;
+										padding-bottom: #{$base-height*$large/2};
+									}
+
+								}
+
+						}
+
+
+			// Horizontal Padding ..
+			@mixin hor-padding($small, $medium, $large){
+
+						padding:0px #{$base-height*$small};
+
+						@media #{breakpoint(medium)} {
+							padding: 0px #{$base-height*$medium};
+						}
+
+						@media #{breakpoint(large)} {
+							padding: 0px #{$base-height*$large};
+						}
+
+			}
+
+			// Borders Padding ..
+			@mixin all-padding($smallver, $smallhor, $mediumver, $mediumhor, $largever, $largehor){
+						padding: #{$base-height*$smallhor} #{$base-height*$smallver};
+
+						@media #{breakpoint(medium)} {
+							padding: #{$base-height*$mediumhor} #{$base-height*$mediumver};
+				}
+
+						@media #{breakpoint(large)} {
+							padding: #{$base-height*$largehor} #{$base-height*$largever};
+				}
+			}
+
+			// Global Padding ..
+			@mixin global-padding(){
+				padding:$base-height*3;
+
+				@media screen and #{breakpoint(medium)} {
+					padding: $base-height*6;
+				}
+
+				@media screen and #{breakpoint(large)} {
+					padding: $base-height*12;
+				}
+			}
+
+
+
+//|| ===
+    // = Animation ..
+//|| ===
+
+	    @mixin transition($time: 0.2s) {
+	        transition: all $time;
+	    }
+
+
+//|| ===
+    // = Scale ..
+//|| ===
+
+			@mixin scale($val, $origin, $inline){
+					position: relative;
+					transform: scale($val);
+					transform-origin: $origin;
+					@if $inline == true {
+						display: inline-block;
+					}
+			}

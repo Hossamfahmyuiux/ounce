@@ -1,0 +1,1084 @@
+/* || ===
+
+= IMKAN.com.sa
+= SECTIONS
+
+=== || */
+
+
+.top-section
+{
+    background-color: $d-border;
+    padding: $lr-whitespace 0 0;
+    span
+    {
+        padding: 10px 30px;
+        background-color: $c-ofwhite;
+        max-width: 370px;
+        margin: auto;
+        font-family: 'Janna LT';
+        border-radius: 50px;
+        &::before
+        {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-left: 5px;
+            background-color: $c-yellow;
+            
+        }
+    }
+    h1
+    {
+        font-family: 'Janna LT';
+    }
+    p
+    {
+        font-family: 'Janna LT';
+    }
+    .curve-bottom
+    {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        img
+        {  
+            width: 100%;
+        }
+    }
+  
+}//end top-page
+
+#features
+{
+    background-image: linear-gradient(180deg, rgba(152, 153, 152, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
+    position: relative;
+    z-index: 1;
+    .bottom-curve
+    {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    article
+    {
+        margin-top: -50px;
+        &:nth-child(2n) 
+        {
+            margin-top: -25px;
+            @media screen and (max-width:$tablet)
+            {   
+                margin-top: $md-whitespace;
+            }
+        }
+        @media screen and (max-width:$tablet)
+        {
+            margin-top: $md-whitespace;
+            float: none!important;
+            text-align: center;
+        }
+        .image
+        {
+            display: inline-block;
+            padding: $sm-whitespace - 5px;
+            border: 1px solid transparent;
+            @include transition;
+            &:hover
+            {
+                border: 1px solid $c-ofwhite;
+            }
+            img
+            {
+                width: auto;
+                @media screen and (max-width:$tablet)
+                {
+                    height: auto;
+                    width: 100px;
+                }
+            }
+        }
+        header
+        {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: $sm-whitespace - 10px;
+            a
+            {
+                line-height: 1;
+                font-size: $md-fontsize;
+                font-weight: 700;
+                color: $c-mgray;
+                font-family: 'Janna LT';
+                @include transition;
+                &:hover
+                {
+                    color: $c-yellow;
+                }
+            }
+            p
+            {
+                line-height: 0;
+                font-size: $xm-fontsize;
+                font-weight: 400;
+                color: $c-gray;
+                font-family: 'Janna LT';
+            }
+        }
+    }
+    .sec-row
+    {
+        article
+        {
+            &:nth-child(2n) 
+            {
+                margin-top: -95px;
+                @media screen and (max-width:$tablet)
+                {   
+                    margin-top: $md-whitespace;
+                }
+            }
+        }
+    }
+}//end features
+
+#items
+{
+    position: relative;
+    article
+    {
+        @media screen and (max-width:$tablet)
+        {
+            text-align: right!important;
+        }
+        &:nth-child(2n) 
+        {
+            margin-top: $md-whitespace + 2px;
+            @media screen and (max-width:$tablet)
+            {   
+                margin-top: 0;
+            }
+            header
+            {
+                padding: 30px 80px 30px 120px;
+                margin-top: $md-whitespace;
+                 @media screen and (max-width:$tablet)
+                {
+                    padding: 15px 60px 15px 60px;
+                }
+            }   
+        }
+        @media screen and (max-width:$tablet)
+        {   
+            float: none!important;
+            text-align: center;
+            margin-bottom: $md-whitespace;
+        }
+        .image
+        {
+            display: inline-block;
+            margin-left: -45px;
+            img
+            {
+                width: auto;
+                 @media screen and (max-width:$tablet)
+                {   
+                    height: 150px;
+                }
+            }
+        }
+        header
+        {
+            display: inline-block;
+            vertical-align: bottom;
+            padding: 50px 80px 50px 120px;
+            background-color: $d-border;
+            max-height: 152px;
+            @media screen and (max-width:$tablet)
+            {   
+                padding: 25px 50px 25px 60px;
+            }
+            a
+            {
+                line-height: 1;
+                font-size: $md-fontsize;
+                font-weight: 700;
+                color: $c-mgray;
+                display: block;
+                @include transition;
+                font-family: 'Janna LT';
+                &:hover
+                {
+                    color: $c-yellow;
+                }
+                @media screen and (max-width:$tablet)
+                {
+                    font-size: $xm-fontsize;
+                }
+           
+            }
+            p
+            {
+                line-height: 0;
+                font-size: $xm-fontsize;
+                font-weight: 400;
+                font-family: 'Janna LT';
+                color: $c-gray;
+                @media screen and (max-width:$tablet)
+                {
+                    font-size: $sm-fontsize;
+                }
+            }
+            span
+            {
+                display: block;
+                padding: 5px 20px 6px 20px;
+                background-color: $c-white;
+                border-radius: 50px;
+                font-size: $xs-fontsize;
+                margin-top: $sm-whitespace - 5px;
+                color: $c-yellow;
+                font-family: 'Janna LT';
+            }
+        }
+    }
+    .coffe-bg
+    {
+        position: absolute;
+        left: 0;
+        bottom: -130px;
+        z-index: 99;
+        @media screen and (max-width:$tablet)
+        {
+            display: none;
+        }
+        img
+        {
+            width: auto;
+
+        }
+    }
+}//*end items*//
+
+
+//* Start products slide*//
+
+.products-slide
+{
+    position: relative;
+    z-index: 1;
+    margin-bottom: $lr-whitespace;
+    .text
+    {
+        span
+        {
+            display: block;
+            font-size: $sm-fontsize;
+            font-weight: 400;
+            color: $c-lgray;
+            padding: 10px 30px;
+            background-color: $c-ofwhite;
+            border-radius: 50px;
+            max-width: 350px;
+            text-align: center;
+            margin-bottom: $md-whitespace;
+            @media screen and (max-width:$tablet)
+            {
+                font-size: $xs-fontsize;
+            }
+        }
+        p
+        {
+            font-size: $xm-fontsize;
+            font-weight: 400;
+            color: $c-lgray;
+            font-family: 'Janna LT';
+            @media screen and (max-width:$tablet)
+            {
+                font-size: $sm-fontsize;
+            }
+        }
+        h2
+        {
+            font-size: $xl-fontsize - 2px;
+            font-weight: 700;
+            font-family: 'Janna LT';
+            margin-top: $sm-whitespace;
+            @media screen and (max-width:$tablet)
+            {
+                font-size: $md-fontsize;
+            }
+        }
+        .video
+        {
+            width: 241px;
+            height: 61px;
+            margin-top: $md-whitespace;
+            display: block;
+            background: url(../imgs/video-bg.png);
+            cursor: pointer;
+            text-align: right;
+            color: $c-white;
+            line-height: 60px;
+            font-size: $sm-fontsize;
+            font-family: 'Janna LT';
+            @media screen and (max-width:$tablet)
+            {
+                width: 235px;
+                height: 55px;
+                line-height: 55px;
+            }
+            i
+            {
+                float: right;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.36);
+                padding: 4px 20px;
+                margin-left: 41px;
+            }
+        }
+        .title
+        {
+            margin-top: $lr-whitespace;
+            img
+            {
+                display: inline-block;
+                width: auto;
+                height: 22px;
+                margin-left: $sm-whitespace - 10px;
+            }
+            h2
+            {
+                display: inline-block;
+                font-size: $xm-fontsize;
+                font-family: 'Janna LT';
+                margin-top: 0;
+            }
+        }
+        .content
+        {
+            background-color: $c-hwhite;
+            .row1
+            {
+                display: inline-block;
+                list-style: none;
+                margin-left: $lr-whitespace *2 + 40px;
+                li
+                {
+                    margin-bottom: $md-whitespace;
+                    font-size: $xm-fontsize;
+                    font-weight: 400;
+                    color: #858585;
+                }
+            }
+        }
+        .buttons
+        {
+            margin-top: $md-whitespace;
+            margin-bottom: $md-whitespace;
+            .add
+            {
+                padding: 0 $xl-whitespace;
+                @media screen and (max-width:$tablet)
+                {
+                    padding: 0 $lr-whitespace - 2px;
+                    max-width: 215px;
+                }
+                i
+                {
+                    float: right;
+                    font-size: 10px;
+                    margin-left: $sm-whitespace + 2px;
+
+                
+                }
+                
+                &:hover
+                {
+                    border: 2px solid $c-black!important;
+                    color: $c-black!important;
+                }
+            }
+            .heart
+            {
+                display: inline-block;
+                font-size: $lr-fontsize;
+                height: 50px;
+                width: 50px;
+                border-radius: 50px;
+                color: $d-red;
+                background-color: $h-red;
+                cursor: pointer;
+                padding-right: $sm-whitespace - 2px;
+                line-height: 69px;
+                margin-right: $md-whitespace;
+                @include transition;
+                &:hover
+                {
+                    background-color: $d-red;
+                    color: $c-white;
+                }
+            }
+        }
+    }
+    .large-slick
+    {
+        height: 345px;
+        .slide
+        {
+            .holder
+            {
+                padding: 60px;
+                background-color: $c-white;
+                img
+                {
+                    width: auto;
+                    margin: 0 auto;
+                }
+            }
+
+        }
+    }
+    
+    .small-slick
+    {
+        position: relative;
+        .slide
+        {
+            padding: 0 5px;
+            .holder
+            {
+                display: inline-block;
+                width: auto;
+                padding: $sm-whitespace;
+                background-color: $c-white;
+                cursor: pointer;
+            }
+        }
+     
+    }
+   .next
+    {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        background-color: $c-white;
+        position: absolute;
+        box-shadow: 0px 5px 20px 12px rgba(35, 39, 48, 0.03);
+        bottom: 41px;
+        left: 55px;
+        cursor: pointer;
+        i
+        {
+            text-align: center;
+            line-height: 38px;
+            margin: 0 auto;
+            display: block;
+            color: $c-mgray;
+            font-size:  $xs-fontsize;
+        }
+    }
+    .curve-bottom
+    {
+        position: absolute;
+        top:-280px;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+        @media screen and (max-width:$tablet)
+        {
+            display: none;
+        }
+    }
+}
+
+//* End products slide*//
+
+//* Start image row *//
+#image-row
+{
+    position: relative;
+    @media screen and (max-width:$tablet)
+    {
+        margin-bottom: $lr-whitespace;
+    }
+    article
+    {
+    padding: $lr-whitespace 0 $xl-whitespace *2 0;
+        @media screen and (max-width:$tablet)
+        {
+            padding: $md-whitespace 0;
+        }
+        .parent
+        {
+            padding: 0 $sm-whitespace;
+        }
+        .image
+        {
+            background: url(../imgs/rectiangle1.png);
+            padding: $md-whitespace + 10px $lr-whitespace;
+            header{
+                span
+                {
+                    color: $c-mgray;
+                    font-size: $md-sm-fontsize;
+                    color: $c-border;
+                    margin-bottom: $sm-whitespace - 5px;
+                    font-family: 'Janna LT';
+                    @media screen and (max-width:$tablet)
+                    {
+                        font-size: $sm-fontsize;
+                    }
+        
+                }
+                a
+                {
+                    color: $c-white;
+                    font-size: $md-lr-fontsize;
+                    font-family: 'Janna LT';
+                    display: block;
+                    @include transition;
+                    @media screen and (max-width:$tablet)
+                    {
+                        font-size: $md-md-fontsize;
+                    }
+                    &:hover
+                    {
+                        color: $c-brand;
+                    }
+                }
+            }
+        }
+        .box2
+        {
+            background: url(../imgs/rectiangle.png)!important;
+        }
+    }
+    .coffe-bg
+    {
+        position: absolute;
+        bottom: -55px;
+        right: 0;
+        width: 100%;
+        z-index: 0;
+        img
+        {
+            width: auto;
+            @media screen and (max-width:$tablet)
+            {
+                height: 100px;
+            }
+        }
+    
+    }
+}
+//* end image row *//
+
+
+.category-bg
+{
+    background-image: linear-gradient(180deg, rgba(152, 153, 152, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
+}
+
+
+//DISPLAY NONE
+.step-content
+{
+    &.active > .contact-area
+    {
+        display: block;
+    }
+    .contact-area
+    {
+        display: none;
+        &.active
+        {
+            display: block;
+        }
+    }
+}
+
+
+
+//* Start step1*//
+.checkout-first
+{
+    margin-bottom: $sm-whitespace - 10px;
+        a
+        {
+            background-color: $w-gray;
+            display: inline-block;
+            color: $c-white;
+            text-transform: none;
+            font-size: 20px;
+            width: 100%;
+            padding: $sm-whitespace;
+            font-family: 'Janna LT';
+            &.active
+            {
+                background-color: $c-green;
+            }
+        }
+    .contact-area
+    {
+        @media screen and(max-width:$tablet)
+        {
+            width: auto!important;
+            margin-right: 0!important;
+        }
+
+        button
+        {
+            margin-bottom: $sm-whitespace!important;
+            background-color: $c-green!important;
+            border: 1px solid $c-green;
+            color: $c-white;
+            margin-bottom: $sm-whitespace!important;
+            display: inline-block;
+            padding: .5rem .75rem;
+            font-size: 18px;
+            line-height: 1.25;
+            background-color: $c-white;
+            background-image: none;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            font-family: 'Janna LT';
+            border-radius: .25rem;
+            width: auto;
+            font-family: 'Janna LT';
+            margin-right: 5px!important;
+        }
+    }
+    .custom-select
+    {
+        select
+        {
+            width: 100%;
+        }
+        i
+        {
+            left: 25px!important;
+            top: 35px!important;
+        }
+    }
+  
+    .male
+    {  
+        label
+        {
+            font-family: 'Janna LT';
+
+            &:after
+            {
+                right: 5px!important;
+                top: 8px!important;
+            }
+        }
+    }
+    
+}
+//* End step1*//
+
+
+//* Start step2*//
+.step2
+{
+   a
+    {
+        background-color: $w-gray;
+        display: inline-block;
+        color: $c-black;
+        text-transform: none;
+        font-size: 20px;
+        width: 100%;
+        padding: $sm-whitespace;
+        font-family: 'Janna LT';
+        &.active
+        {
+            background-color: $c-green;
+            color: $c-white;
+        }
+    }
+    .contact-area
+    {
+        background-color: $c-white;
+        margin-top: $sm-whitespace;
+        margin-bottom: $sm-whitespace;
+        @media screen and(max-width:$tablet)
+        {
+            width: auto!important;
+            margin-right: 0!important;
+        }
+        #map
+        {
+            iframe
+            {
+                width: 100%;
+            }
+        } 
+        .text
+        {
+            &:before
+            {
+                content: '';
+                display: inline-block;
+                height: 50px;
+                width: 3px;
+                margin-left: 10px;
+                background-color: $c-mgray;
+            }
+            ul
+            {
+                list-style: none;
+                display: inline-block;
+                padding-right: 0;
+                li
+                {
+                    font-size: $sm-fontsize; 
+                    font-family: 'Janna LT';
+                }
+            } 
+        }
+     
+    button
+    {
+        margin-bottom: $sm-whitespace!important;
+        display: inline-block;
+        padding: .5rem .75rem;
+        background-color: $c-white!important;
+        padding: .5rem .75rem;
+        font-size: 18px;
+        line-height: 1.25;
+        height: 38px!important;
+        color: #232730;
+        background-color: $c-white;
+        background-image: none;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        font-family: 'Janna LT';
+        border-radius: .25rem;
+        margin-right: 5px!important;
+        font-family: 'Janna LT';
+        margin-left: 0!important;
+        
+    }
+    .continue
+    {
+        background-color: $c-green!important;
+        color: $c-white;
+        display: inline-block;
+        padding: .5rem .75rem;
+        font-size: 18px;
+        line-height: 1.25;
+        background-image: none;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid $c-green;
+        font-family: 'Janna LT';
+        border-radius: .25rem;
+        margin-top: 15px;
+        margin-bottom: 0!important;
+        margin-right: 5px!important;
+        font-family: 'Janna LT';
+        margin-left: 0!important;
+    }
+
+    }
+
+
+
+}
+//* End step2*//
+
+
+
+//* Start step3*//
+.step3
+{
+    .male
+    {
+        padding: $sm-whitespace;
+        label
+        {
+            font-family: 'Janna LT';
+            &:after
+            {
+                top: 6px!important;
+            }
+        }
+    }
+}
+//* Start step*//
+
+
+//* Start step*//
+.step4
+{
+    .male
+    {
+        padding: $sm-whitespace;    
+        label
+        {
+            img
+            {
+                width: auto;
+                margin-left: $sm-whitespace - 5px;
+            }
+            &:after
+            {
+                right: 5px!important;
+                top: 14px!important;
+            }
+        }
+        span
+        {
+            padding: 10px 25px 0 25px;
+            font-family: 'Janna LT';
+        }
+    }
+    button
+    {
+        display: inline-block;
+        margin-right: 5px!important;
+        margin-left: 0!important;
+    }
+}
+//* End step4*//
+
+
+//* Start step5*//
+.step5
+{
+    .parent
+    {
+        margin: $sm-whitespace;
+        border: 1px solid $c-ofwhite;
+    }
+    .contact-area
+    {
+        span
+        {
+            font-family: 'Janna LT';
+        }
+        ul
+        {
+            list-style: none;
+            padding: 0;
+            li{
+                font-family: 'Janna LT';
+                font-weight: 700;
+            }
+            
+        }       
+    }
+
+}
+//* Start step*//
+
+
+//* Start step*//
+.cart
+{
+    display: none;
+    table
+    {
+        margin: $sm-whitespace;
+        @media screen and(max-width:$tablet){
+            margin: 0;
+            width: 100%;
+        }
+        td
+        {
+            .custom-select
+            {
+                display: inline-block;
+                position: relative;
+                width: auto;
+                &:first-child
+                {
+                    padding-right: 0!important;
+                }
+                i
+                {
+                    position: absolute;
+                    left: 25px !important;
+                    top: 19px!important;
+                    font-size: 8px; 
+                }
+                select
+                {
+                    display: inline-block;
+                    float: right;
+                    width: auto;
+                    height: 40px;
+                    padding: 5px 10px 5px 25px;
+                    line-height: 1.5;
+                    color: $c-mgray;
+                    font-family: 'Janna LT';
+                    vertical-align: middle;
+                    background-size: 8px 10px;
+                    border: 1px solid $d-gray;
+                    border-radius: .25rem;
+                    -webkit-appearance: none;                   
+                }
+            }
+            input
+            {
+                display: inline-block;
+                float: right;
+                height: 40px;
+                padding: 5px 10px 5px 25px;
+                line-height: 1.5;
+                color: $c-mgray;
+                vertical-align: middle;
+                background-size: 8px 10px;
+                font-family: 'Janna LT';
+                border: 1px solid $d-gray;
+                border-radius: .25rem;
+                -webkit-appearance: none; 
+            }
+    
+        }
+    }
+}
+//* End step5*//
+
+
+//* Start step*//
+#paypal
+{
+    display: none;
+}
+//* end step*//
+
+
+//* Start step6*//
+.step6
+{
+    margin-bottom: $lr-whitespace;
+    .card-body
+    {
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+        padding: $sm-whitespace;
+        margin: $sm-whitespace;
+        background-color: $c-white;
+        ul
+        {
+            list-style: none;
+            padding: 0;
+            li
+            {
+                margin: 10px 0;
+                h5
+                {
+                    padding: 10px 0;
+                    border-bottom: 1px solid $c-border;
+                    font-size: $xm-fontsize;
+                }
+            }
+        }
+        .main-table
+        {
+            td
+            {
+                .rember-me 
+                {
+                    label
+                    {
+                        &:last-child
+                        {
+                            &:after
+                            {
+                                top: 9px!important;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    .tltle
+    {
+        background-color: $w-gray;
+        display: inline-block;
+        color: $c-black;
+        text-transform: none;
+        font-size: 20px;
+        width: 100%;
+        padding: $sm-whitespace;
+        font-family: 'Janna LT';
+        &.active
+        {
+            background-color: $c-green;
+        }
+    }
+    .table
+    {
+        float: left;
+    }
+    button
+    {
+        margin-bottom: $sm-whitespace!important;
+        display: inline-block;
+        padding: .5rem .75rem;
+        background-color: $c-white!important;
+        padding: .5rem .75rem;
+        font-size: 18px;
+        line-height: 1.25;
+        color: #232730;
+        background-color: #fff;
+        background-image: none;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        font-family: 'Janna LT';
+        border-radius: .25rem;
+        height: 38px!important;
+        margin-right: 5px!important;
+        margin-left: 0!important;
+        
+    }
+    .continue
+    {
+        background-color: $c-green!important;
+        color: $c-white;
+        display: inline-block;
+        padding: .5rem .75rem;
+        font-size: 18px;
+        line-height: 1.25;
+        background-image: none;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid $c-green;
+        font-family: 'Janna LT';
+        border-radius: .25rem;
+        margin-top: 15px;
+    }
+    .contact-area
+    {
+        .rember-me 
+        {
+            label
+            {
+                &:last-child
+                {
+                    &:after
+                    {
+                        top: 9px!important;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+//* End step6*//

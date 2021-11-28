@@ -1,0 +1,216 @@
+/* || ===
+
+= IMKAN.com.sa
+= COLORING
+
+=== || */
+
+
+    // TEXT COLOR
+    .txt-brand{
+        color: $c-brand;
+    }
+    .txt-brand2{
+        color: $c-brand2;
+    }
+    .txt-brandhvr{
+        color: $c-brandhvr;
+    }
+    .txt-mgray{
+        color: $c-mgray;
+    }
+    .txt-lgray{
+        color: $c-lgray;
+    }
+    .txt-gray{
+        color: $c-gray;
+    }
+    .txt-purple{
+        color: $c-purple;
+    }
+    .txt-blue{
+        color: $c-blue;
+    }
+    .txt-dgray{
+        color: $c-dgray;
+    }
+    .txt-black{
+        color: $c-black;
+    }
+    .txt-green{
+        color: $c-green;
+    }
+    .txt-orange{
+        color: $c-orange;
+    }
+    .txt-yellow{
+        color: $c-yellow;
+    }
+    .txt-red{
+        color: $c-red;
+    }
+    .txt-white{
+        color: $c-white;
+    }
+
+        // TEXT COLORS HOVER ..
+            .txt-brand-hvr{
+                &:hover{
+                    color: $c-brand !important;
+                    *{
+                        color: $c-brand !important;
+                    }
+                }
+
+            }
+            .txt-brand2-hvr{
+                &:hover{
+                    color: $c-brand2 !important;
+                    *{
+                        color: $c-brand2 !important;
+                    }
+                }
+            }
+            .txt-mgray-hvr{
+                &:hover{
+                    color: $c-mgray !important;
+                    *{
+                        color: $c-mgray !important;
+                    }
+                }
+            }
+            .txt-lgray-hvr{
+                &:hover{
+                    color: $c-lgray !important;
+                    *{
+                        color: $c-lgray !important;
+                    }
+                }
+            }
+            .txt-dgray-hvr{
+                &:hover{
+                    color: $c-dgray !important;
+                    *{
+                        color: $c-dgray !important;
+                    }
+                }
+            }
+            .txt-black-hvr{
+                &:hover{
+                    color: $c-black !important;
+                    *{
+                        color: $c-black !important;
+                    }
+                }
+            }
+            .txt-green-hvr{
+                &:hover{
+                    color: $c-green !important;
+                    *{
+                        color: $c-green !important;
+                    }
+                }
+            }
+            .txt-red-hvr{
+                &:hover{
+                    color: $c-red !important;
+                    *{
+                        color: $c-red !important;
+                    }
+                }
+            }
+            .txt-white-hvr{
+                &:hover{
+                    color: $c-white !important;
+                    *{
+                        color: $c-white !important;
+                    }
+                }
+            }
+
+
+
+    // BACKGROUND COLOR ..
+    .bg-brand{
+        background: $c-brand;
+    }
+    .bg-lbrand{
+        background: $c-lbrand;
+    }
+    .bg-ofwhite{
+        background: $c-ofwhite;
+    }
+    .bg-brand2{
+        background: $c-brand2;
+    }
+    .bg-brandhvr{
+        background: $c-brandhvr;
+    }
+    .bg-mgray{
+        background: $c-mgray;
+    }
+    .bg-lgray{
+        background: $c-lgray;
+    }
+    .bg-dgray{
+        background: $c-dgray;
+    }
+    .bg-black{
+        background: $c-black;
+    }
+    .bg-green{
+        background: $c-green;
+    }
+    .bg-red{
+        background: $c-red;
+    }
+    .bg-orange{
+        background: $c-orange;
+    }
+    .bg-yellow{
+        background: $c-yellow;
+    }
+    .bg-none{
+        background: transparent;
+    }
+    .bg-white{
+        background: $c-white;
+    }
+    .bg-gr-main{
+      background: $c-gradient-main;
+    }
+
+        // BACKGROUND HOVER COLORS ..
+            .bg-brand-hvr:hover{
+                background: $c-brand;
+            }
+            .bg-brand2-hvr:hover{
+                background: $c-brand2;
+            }
+            .bg-mgray-hvr:hover{
+                background: $c-mgray;
+            }
+            .bg-lgray-hvr:hover{
+                background: $c-lgray;
+            }
+            .bg-dgray-hvr:hover{
+                background: $c-dgray;
+            }
+            .bg-black-hvr:hover{
+                background: $c-black;
+            }
+            .bg-green-hvr:hover{
+                background: $c-green;
+            }
+            .bg-red-hvr:hover{
+                background: $c-red;
+            }
+            .bg-none-hvr:hover{
+                background: transparent;
+            }
+            .bg-white-hvr:hover{
+                background: $c-white;
+            }
+            .bg-gr-main-hvr:hover{
+              background: $c-gradient-main;
+            }

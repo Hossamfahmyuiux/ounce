@@ -1,0 +1,390 @@
+/* || ===
+
+= IMKAN.com.sa
+= CARDS
+
+=== || */
+
+.proudcts
+{
+    padding: 0 0 $lr-whitespace 0;
+    position: relative;
+    .shadow-b
+    {
+        display: block;
+        position: absolute;
+        width: 23%;
+        background-color: $c-white;
+        top: 0;
+        left: 0;
+        height: 150;
+        height: 242px;
+        box-shadow: -20px 3px 20px 12px rgba(175, 201, 227, 0.09);
+        @media screen and (max-width:$tablet)
+        {
+            display: none;
+        }
+    }   
+    .tabs-holder
+    {
+        padding: 60px 0 0 0;
+        box-shadow: 2px 1px 20px 11px rgba(175, 201, 227, 0.09);
+        margin-bottom: $lr-whitespace;
+    }
+    h2
+    {
+        margin-right: $lr-whitespace;
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: $lr-whitespace;
+        font-family: 'Janna LT';
+    }
+    .tabs
+    {
+        margin-bottom: 0;
+        margin-right: 0;
+        padding-right: 0;
+        margin-top: 0;
+        li
+        { 
+            padding-right: 0!important;
+            cursor: pointer;
+            a
+            {
+                font-size: $xm-fontsize;
+                color: $c-mgray;
+                background-color: $d-border;
+                display: block;
+                padding: $md-whitespace $lr-whitespace;
+                cursor: pointer;
+                font-family: 'Janna LT';
+                @media screen and (max-width:$tablet)
+                {
+                    padding: $sm-whitespace $md-whitespace;
+                    font-size: $sm-fontsize;
+                }
+                &:hover
+                {
+                    color: $c-black;
+                }
+                &.inactive
+                {
+                    background-color: $c-white;
+                }
+            }
+        }
+    }
+    .tab_contents
+    {
+        .tabs_item:not(:first-of-type)
+        {
+            display: none;
+        }
+    }
+
+    .tabs_item
+    {
+     
+    article
+    {
+        padding-bottom: $lr-whitespace;
+        .image
+        {
+            padding: $md-whitespace;
+            border: 1px solid $d-border;
+            @include transition;
+            margin-top: 0;
+            position: relative;
+            &:hover
+            {
+                border: 1px solid transparent;
+                margin-top: -30px;
+                background-color: $c-white;
+                box-shadow: 0px 5px 20px 12px rgba(35, 39, 48, 0.03);
+            }
+            &:hover > .heart
+            {
+                display: block;
+            }
+            &:hover > .add
+            {
+                display: block;
+            }
+            .heart
+            {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                display: none;
+                color: $c-mgray;
+                @include transition;
+                i
+                {
+                    font-size: $lr-fontsize;
+                }
+                &:hover
+                {
+                    color: $c-red;
+                }
+            }
+            .add 
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                @include transition;
+                &:hover
+                {
+                    color: $c-black;
+                    background-color: $c-white!important;
+
+                }
+            }
+        }
+        header
+        {
+            padding: $sm-whitespace 0;
+            a
+            {
+                line-height: 1;
+                font-size: $md-fontsize;
+                font-family: 'Janna LT';
+                font-weight: 700;
+                color: $c-black;
+                display: block;
+                float: right;
+                width: 100%;
+                text-align: right;
+                max-width: auto!important;
+                @include transition;
+                &:hover
+                {
+                    color: $c-brand;
+                }
+                @media screen and (max-width:$tablet)
+                {
+                    font-size: $xm-fontsize;
+                }
+            }
+            p
+            {
+                line-height: 1;
+                font-size: $xm-fontsize;
+                font-weight: 400;
+                font-family: 'Janna LT';
+                color: $c-gray;
+                @media screen and (max-width:$tablet)
+                {
+                    font-size: $sm-fontsize;
+                }
+            }
+            span
+            {
+                line-height: 1;
+                font-size: 20px;
+                font-weight: 700;
+                color: #131927;
+                background-color: $c-white;
+                font-family: 'Janna LT';
+                display: block;
+                margin-top: 5px;
+                display: block;
+                padding: 10px 15px;
+                border-radius: 50px;
+                box-shadow: 0px 4px 10px 0px rgba(175, 201, 227, 0.09);
+                @media screen and (max-width:$tablet)
+                {
+                    font-size: $xm-fontsize;
+                }
+            }
+        }
+    }
+}
+
+
+   
+
+    .sections
+    {
+        max-width: 326px;
+        margin: 0 auto;
+        &:hover
+        {
+            color: $c-black;
+            background-color: $c-black;
+        }
+    }
+    .coffe-bg
+    {
+        position: absolute;
+        right: 0;
+        bottom: -55px;
+        z-index: 66;
+        img
+        {
+            width: auto;
+            @media screen and (max-width:$tablet)
+            {
+                height: 100px;
+            }
+        }
+    }
+}
+
+
+
+//* Start catgory page *//
+#category
+{
+    background-image: none;
+    position: relative;
+    z-index: 1;
+    .curve-top
+    {
+        position: absolute;
+        top: -150px;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+        @media screen and (max-width:$tablet)
+        {
+            display: none;
+        }
+        
+    }
+    .title
+    {
+        img{
+            width: auto;
+            display: inline-block;
+            height: 80px;
+        }
+        h2
+        {
+            display: inline-block;
+            margin-right: $md-whitespace;
+        }
+    }
+    .tabs-hold
+    {
+        box-shadow: 0px 4px 10px 0px rgba(175, 201, 227, 0.09);
+        margin: $md-whitespace 0;
+        background-color: $c-white;
+        .headline
+        {
+            display: inline-block;
+            padding: $lr-whitespace - 10px 0;
+            border-left: 2px solid $d-border;
+            @media screen and (max-width:$tablet)
+            {
+                padding: $md-whitespace;
+                border-left: none;
+            }
+            h2
+            {
+                display: inline-block;
+                margin-left: $lr-whitespace;
+                margin-bottom: 0;
+                font-size: $md-fontsize;
+                @media screen and (max-width:$tablet)
+                {
+                    font-size: $xm-fontsize;
+                    margin-left: $md-whitespace;
+                    margin-right: $sm-whitespace;
+                }
+            }
+
+        }
+        .tab_contents
+        {
+            .tabs_item:not(:first-of-type)
+            {
+                display: none;
+            }
+        }
+        ul
+        {
+            margin: 40px 30px 40px 0;
+            @media screen and (max-width:$tablet)
+            {
+                margin: 0;
+            }
+            li
+            {
+                padding: 10px 0;
+                border-radius: 50px;
+                margin: 0 $md-whitespace;
+                width: 150px;
+                cursor: pointer;
+                background-color: $d-green;
+                border: 2px solid $d-green;
+                @media screen and (max-width:$tablet)
+                {
+                   margin-bottom: $sm-whitespace;
+                    width: 130px;
+                    
+                }
+                a
+                {
+                    text-align: center;
+                    display: block;
+                    margin: 0 auto;
+                    cursor: pointer;
+                    color: $c-green;
+                    .icon
+                    {
+                        display: inline-block;
+                        width: 17px;
+                        height: 17px;
+                        background-color: $c-white;
+                        vertical-align: middle;
+                        border-radius: 139px;
+                        margin-right: 5px;
+                        span
+                        {
+                            display: block;
+                            width: 9px;
+                            height: 3px;
+                            background-color: $c-red;
+                            text-align: center;
+                            margin: 0 auto;
+                            vertical-align: middle;
+                            margin-top: 7px;
+                        }
+                    }
+                }
+                &.inactive
+                {
+                    background-color: $c-white;
+                    border: 2px solid $d-border;
+                    a{
+                        color: $c-mgray;
+                        .icon
+                        {
+                            display: none;
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+    .coffe-bg
+    {
+        position: absolute;
+        left: 0;
+        bottom: -55px;
+        z-index: 99;
+        img
+        {
+            width: auto;
+            @media screen and (max-width:$tablet)
+            {
+                height: 100px;
+            }
+        }
+    }
+}
+
+//* End catgory page *//
